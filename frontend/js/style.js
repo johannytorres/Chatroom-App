@@ -8,17 +8,13 @@ function scaleChatroom() {
   );
 
   const main = document.querySelector(".chatroom-main");
+  if (!main) return; // ← CLAVE
 
   const offsetX = (window.innerWidth - baseWidth * scale) / 2;
 
   main.style.transform =
     `translateX(${offsetX}px) scale(${scale})`;
 }
-
-window.addEventListener("resize", scaleChatroom);
-window.addEventListener("load", scaleChatroom);
-
-//para el form
 
 function scaleForm() {
   const baseWidth = 1920;
@@ -27,15 +23,23 @@ function scaleForm() {
   const scale = Math.min(
     window.innerWidth / baseWidth,
     window.innerHeight / baseHeight
-  );  
+  );
 
   const main = document.querySelector(".form-main");
+  if (!main) return; // ← CLAVE
 
-  const offsetX = (window.innerWidth - baseWidth * scale) / 2;  
-  
+  const offsetX = (window.innerWidth - baseWidth * scale) / 2;
+
   main.style.transform =
     `translateX(${offsetX}px) scale(${scale})`;
 }
 
-window.addEventListener("resize", scaleForm);
-window.addEventListener("load", scaleForm);
+window.addEventListener("resize", () => {
+  scaleChatroom();
+  scaleForm();
+});
+
+window.addEventListener("load", () => {
+  scaleChatroom();
+  scaleForm();
+});
