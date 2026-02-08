@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: #C9D4FF;
+
+    background-image: url('../components/photos/Fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+}
+
+.form-main {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+
+  transform-origin: top left;
+}
+
+#notebook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    background-image: url('../components/photos/notebook.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    height: 946px;
+    width: 748px;
+    left: 50%;
+    right: 50%;
+    top: 65px;
+
+    filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0px 15px 15px 0px;
+
+}
+
+#username-input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Jua';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+
+    color: #768AAF;
+    
+    background: transparent;
+
+    /* Username... */
+
+    position: absolute;
+    left: 28.8%;
+    right: 16.25%;
+    top: 55%;
+    bottom: 40.38%;
+}
+
+#username-input:focus {
+    outline: none;
+}
+
+#username-input::placeholder {
+  color: #768aaf87;
+}
+
+#submit-button{
+    background-image: url(../components/assets/enter.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    left: 195.95px;
+    top: 750px;
+
+    background-color: transparent;
+    border: none;
+
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    filter: brightness(0.95);
+}
+
+#tabs{
+    position: absolute;
+    width: 44px;
+    height: 900px;
+    top: -2px;
+    left: 1144px;
+    left: 1137px;
+}
+
+#tab-pink{
+    position: absolute ;
+    bottom: 643px;
+
+    width: 44px;
+    height: 174px;
+
+    background-image: url(../components/assets/pink.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#tab-yellow{
+    position: absolute ;
+    bottom: 498px;
+
+    width: 44px;
+    height: 174px;
+
+    background-image: url(../components/assets/yellow.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#tab-green{
+    position: absolute;
+    bottom: 349px;
+
+    width: 44px;
+    height: 174px;
+
+    background-image: url(../components/assets/green.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+#tab-blue{
+    position: absolute;
+    bottom: 200px;
+
+    width: 44px;
+    height: 174px;
+
+    background-image: url(../components/assets/blue.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+#tab-purple{
+    position: absolute;
+    bottom: 51px;
+
+    width: 44px;
+    height: 174px;
+
+    background-image: url(../components/assets/purple.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+#tab-red{
+    position: absolute;
+    bottom: -98px;
+
+    width: 44px;
+    height: 174px;
+
+    background-image: url(../components/assets/red.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.tab:hover{
+    cursor: pointer;
+    left: 7px;
+}
+
+.tab.selected {
+    left: 7px;
+    filter: brightness(1.1);
+}
+
+
+#notebook-container{
+    position: absolute;
+    width: 792px;
+    height: 946px;
+}
+
+#sign{
+    background-image: url(../components/assets/arrow.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    width: 95px;
+    height: 90px;
+
+    left: 620px;
+    top: 235px;
+}
