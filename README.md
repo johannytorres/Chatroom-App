@@ -1,4 +1,4 @@
-# Chatroom App
+# Sticky Chat
 
 A real-time chat application built with **Node.js**, **Express**, and **Socket.IO**.  
 Users can choose a username and a display color before joining a shared chat room where messages are instantly broadcast to all connected users.
