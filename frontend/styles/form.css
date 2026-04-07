@@ -14,7 +14,7 @@
 
     background: #C9D4FF;
 
-    background-image: url('../components/photos/Fondo.png');
+    background-image: url('../assets/Fondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
     align-items: center;
     padding: 0px;
 
-    background-image: url('../components/photos/notebook.png');
+    background-image: url('../assets/notebook.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@
 }
 
 #submit-button{
-    background-image: url(../components/assets/enter.svg);
+    background-image: url('../assets/enter.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@
     width: 44px;
     height: 174px;
 
-    background-image: url(../components/assets/pink.svg);
+    background-image: url('../assets/pink.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@
     width: 44px;
     height: 174px;
 
-    background-image: url(../components/assets/yellow.svg);
+    background-image: url('../assets/yellow.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,7 +159,7 @@
     width: 44px;
     height: 174px;
 
-    background-image: url(../components/assets/green.svg);
+    background-image: url('../assets/green.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@
     width: 44px;
     height: 174px;
 
-    background-image: url(../components/assets/blue.svg);
+    background-image: url('../assets/blue.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@
     width: 44px;
     height: 174px;
 
-    background-image: url(../components/assets/purple.svg);
+    background-image: url('../assets/purple.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@
     width: 44px;
     height: 174px;
 
-    background-image: url(../components/assets/red.svg);
+    background-image: url('../assets/red.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@
 }
 
 #sign{
-    background-image: url(../components/assets/arrow.svg);
+    background-image: url('../assets/arrow.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* ================= WRAPPER ================= */
+/* WRAPPER */
 
 .chatroom-wrapper {
     width: 100vw;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    background: #C9D4FF url('../components/photos/Fondo.png') center / cover no-repeat;
+    background: #C9D4FF url('../assets/Fondo.png') center / cover no-repeat;
 }
 
 .chatroom-main {
@@ -23,7 +23,7 @@
     transform-origin: top left;
 }
 
-/* ================= FOLDER ================= */
+/* FOLDER */
 
 #folder {
     position: absolute;
@@ -33,17 +33,17 @@
     width: 1820px;
     height: 980px;
 
-    background: url('../components/photos/Folder.png') center / 105.5% no-repeat;
+    background: url('../assets/Folder.png') center / 105.5% no-repeat;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 #head-folder {
     width: 100%;
     height: 150px;
 }
 
-/* ================= CHAT AREA ================= */
+/* CHAT AREA */
 
 #chat-container {
     position: absolute;
@@ -63,12 +63,12 @@
     scroll-behavior: smooth;
 }
 
-/* spacer para pegar mensajes abajo */
+/* spacer to stick messages to the bottom */
 #chat-spacer {
     margin-top: auto;
 }
 
-/* ocultar scrollbar */
+/* hide scrollbar */
 #chat-container {
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -77,7 +77,7 @@
     display: none;
 }
 
-/* ================= CHAT BAR ================= */
+/* CHAT BAR */
 
 #chatbar-container {
     position: absolute;
@@ -96,7 +96,7 @@
     border-radius: 40px;
 }
 
-/* ================= MESSAGE WRAPPER ================= */
+/* MESSAGE WRAPPER */
 
 .message-div {
     width: 100%;
@@ -113,7 +113,7 @@
     justify-content: flex-start;
 }
 
-/* ================= MESSAGE BOX ================= */
+/* MESSAGE BOX */
 
 .message-container {
     display: inline-flex;
@@ -145,7 +145,7 @@
     width: fit-content;
 }
 
-/* ================= TEXT ================= */
+/* TEXT */
 
 .message-text-header {
     font-family: 'Quicksand';
@@ -167,7 +167,7 @@
     word-break: break-word;
 }
 
-/* ================= INPUT BAR ================= */
+/* INPUT BAR */
 
 #message-input {
     flex: 1;
@@ -189,7 +189,7 @@
     color: #ffffff97;
 }
 
-/* ================= ICONS ================= */
+/* ICONS */
 
 #clip, #smile {
     width: 42px;
@@ -200,17 +200,17 @@
     background-repeat: no-repeat;
 }
 
-#clip { background-image: url(../components/assets/clip.svg); }
-#smile { background-image: url(../components/assets/smile.svg); }
+#clip { background-image: url('../assets/clip.svg'); }
+#smile { background-image: url('../assets/smile.svg'); }
 
 #send {
     width: 152px;
     height: 48px;
-    background: url(../components/assets/send.svg) center / contain no-repeat;
+    background: url('../assets/send.svg') center / contain no-repeat;
     cursor: pointer;
 }
 
-/* ================= COLOR THEMES ================= */
+/* COLOR THEMES */
 
 .message-header.red { background: #F89A9A; }
 .message-header.blue { background: #9AD5FF; }

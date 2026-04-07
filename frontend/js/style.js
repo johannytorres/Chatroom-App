@@ -1,3 +1,4 @@
+// Scale the chatroom layout to fit the viewport while keeping it centered.
 function scaleChatroom() {
   const baseWidth = 1920;
   const baseHeight = 1080;
@@ -8,7 +9,7 @@ function scaleChatroom() {
   );
 
   const main = document.querySelector(".chatroom-main");
-  if (!main) return; // ← CLAVE
+  if (!main) return;
 
   const offsetX = (window.innerWidth - baseWidth * scale) / 2;
 
@@ -16,6 +17,7 @@ function scaleChatroom() {
     `translateX(${offsetX}px) scale(${scale})`;
 }
 
+// Scale the form layout with the same viewport rules as the chatroom.
 function scaleForm() {
   const baseWidth = 1920;
   const baseHeight = 1080;
@@ -26,7 +28,7 @@ function scaleForm() {
   );
 
   const main = document.querySelector(".form-main");
-  if (!main) return; // ← CLAVE
+  if (!main) return;
 
   const offsetX = (window.innerWidth - baseWidth * scale) / 2;
 
@@ -34,11 +36,13 @@ function scaleForm() {
     `translateX(${offsetX}px) scale(${scale})`;
 }
 
+// Recalculate both layouts whenever the window size changes.
 window.addEventListener("resize", () => {
   scaleChatroom();
   scaleForm();
 });
 
+// Apply the initial scale as soon as the page finishes loading.
 window.addEventListener("load", () => {
   scaleChatroom();
   scaleForm();
